@@ -28,7 +28,7 @@ public class Main {
         System.out.println("Total payroll of employees with bonus of 5000: " + payrollSystem.calculateTotalPayroll(employee -> employee.getSalary() + 5000));
         System.out.println();
 
-        // Highest pain employee
+        // Highest paid employee
         Optional<Employee> highestPaidEmployee = payrollSystem.getHighestPaidEmployee();
         highestPaidEmployee.ifPresent(System.out::println);
         System.out.println();
